@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  retention-monitor:
+    build: .
+    container_name: realates-retention-monitor
+    environment:
+      - CHURN_THRESHOLD_DAYS=14
+      - ESCALATION_THRESHOLD_DAYS=30
